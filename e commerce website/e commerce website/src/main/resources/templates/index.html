@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    footer{background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); 
+ 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="\css\project.css" rel="stylesheet" type="text/css">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="\images\logo.png">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light " style="background: #355C7D;  
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); 
+   ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="\images\logo.png" alt="hds favicaon" width="30px;"
+          style="color: honeydew !important;">Vishal Mega Mart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" th:href="@{index}"
+              style="color: honeydew;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="shop.html" th:href="@{shop}"
+              style="color: honeydew;">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" style="color: honeydew;">
+              About us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="my-info.html" th:href="@{my-info}">Info</a></li>
+              <li><a class="dropdown-item" href="brand.html" th:href="@{brand}">Brand Partners</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html" th:href="@{contact}"
+              style="color: honeydew;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="myCart.html" th:href="@{myCart}"
+              style="color: honeydew;">Cart</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-outline-dark" href="adminLogin.html" th:href="@{admin}" style="color: honeydew;">Admin</a>
+          </li>
+          <li class="nav-but">
+            <a class="btn btn-outline-dark" href="signup.html" th:href="@{signup}"
+              style="margin-left: 4px; color: honeydew;">SignUp</a>
+          </li>
+          <li class="nav-but">
+            <a class="btn btn-outline-dark" href="login.html" th:href="@{login}"
+              style="margin-left: 4px; color: honeydew;">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container" id="Home">
+    <h1>Elevate Your Shopping Experience with Value</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner bg-light">
+        <div class="carousel-item active">
+          <img src="https://img.freepik.com/free-vector/realism-hand-drawn-horizontal-banner_23-2150203461.jpg?w=2000"
+            class="d-block w-100 mx-auto" alt="..." style="width: 1242px; height:400px ;">
+        </div>
+        <div class="carousel-item ">
+          <img src="https://i.pinimg.com/736x/ba/12/70/ba1270340211f837434e537dcacaf242.jpg"
+            class="d-block w-100 mx-auto" alt="..." style="width: 1242px; height:400px ;">
+        </div>
+        <div class="carousel-item">
+          <img src="https://img.freepik.com/premium-psd/smartphone-sale-banner-template_185005-374.jpg?w=2000"
+            class="d-block w-100 mx-auto" alt="..." style="width: 1242px; height:400px ;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr>
+    <br>
+
+    <div class="row">
+      <h1 style="text-align: left;">Products</h1>
+      <div class="col" id="budget">
+
+        <img src="https://www.financialexpress.com/wp-content/uploads/2023/01/2023-Mahindra-Thar-2.jpg?w=1024" alt=""
+          width="260px" height="100px">
+        <p><strong>Thar</strong></p>
+        <p><strong>Price:</strong> &#8377; 12,00,000</p>
+      </div>
+      <div class="col" id="budget">
+        <img src="https://m.media-amazon.com/images/I/41096oZc1HL._AC_UF1000,1000_QL80_.jpg" alt=""
+        width="260px" height="100px">
+        <p><strong>Teddy </strong></p>
+        <p><strong>Price:</strong> &#8377; 599</p>
+      </div>
+      <div class="col" id="budget">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_U5e2TCaIo-b6CBBxdLNzA4EIX-pMLaDuA&usqp=CAU"
+          alt="" width="260px" height="100px">
+        <p><strong>Cycle</strong></p>
+        <p><strong>Price:</strong> &#8377; 7999</p>
+      </div>
+      <div class="col" id="budget">
+        <img src="https://img.fruugo.com/product/8/14/561980148_max.jpg" alt="" width="260px" height="100px">
+        <p><strong>Watch</strong></p>
+        <p><strong>Price:</strong> &#8377; 1499</p>
+      </div>
+      <div class="col" id="budget">
+        <img src="https://m.media-amazon.com/images/I/71Ksr+YG5sL.jpg" alt=""  width="260px" height="100px">
+        <p><strong>chocolate</strong></p>
+        <p><strong>Price:</strong> &#8377; 300</p>
+      </div>
+    </div>
+    <a class="btn btn-outline-dark" th:href="@{shop}" id="buy" style="background-color:#49beb7;">see more</a>
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+      <h2 style="text-align: left;">Mid Range</h2>
+      <div class="col" id="midRange">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7h6S7xrNzc6ihoCi5p-mdDfoRJncOAkeNA&usqp=CAU"
+          alt=""  width="260px" height="100px">
+        <p><strong>Teddy </strong></p>
+        <p><strong>Price:</strong> &#8377; 999</p>
+      </div>
+      <div class="col" id="midRange">
+        <img
+          src="https://rukminim2.flixcart.com/image/312/312/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70"
+          alt=""  width="260px" height="100px">
+        <p><strong>Camera </strong></p>
+        <p><strong>Price:</strong> &#8377; 59990</p>
+      </div>
+      <div class="col" id="midRange">
+        <img
+          src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/r/e/f/-original-imagrgprbhchwgve.jpeg?q=70"
+          alt=""  width="260px" height="100px">
+        <p><strong>Laptop </strong></p>
+        <p><strong>Price:</strong> &#8377; 39999</p>
+      </div>
+      <div class="col" id="midRange">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/kt1u3rk0/backpack/u/i/e/clan-clan19cbblu-backpack-safari-original-imag6hbykhgjfrwh.jpeg?q=70"
+          alt="" width="260px" height="100px">
+        <p><strong>Bag</strong></p>
+        <p><strong>Price:</strong> &#8377; 899</p>
+      </div>
+      <div class="col" id="midRange">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/h/n/n/-original-imagrrx6zmc5zdfm.jpeg?q=70"
+          alt="" width="260px" height="100px">
+        <p><strong>Airbuds</strong></p>
+        <p><strong>Price:</strong> &#8377; 1799</p>
+      </div>
+    </div>
+    <a class="btn btn-outline-dark" th:href="@{shop}" id="buy" style="background-color:#49beb7;">see more</a>
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+      <h2 style="text-align: left;">Premium</h2>
+      <div class="col" id="premium">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/plate-tray-dish/v/c/3/melamine-11-inch-deluxe-melamine-banana-leaf-full-plate-for-original-imaghpftzk3f2zqz.jpeg?q=70"
+          alt=""  width="260px" height="100px">
+        <p><strong>Plates</strong></p>
+        <p><strong>Price:</strong> &#8377; 469</p>
+      </div>
+      <div class="col" id="premium">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/t/s/q/32-pm207368q078-pepe-jeans-original-imagqhdgcnexhpdw.jpeg?q=70"
+          alt=""  width="260px" height="100px">
+        <p><strong>Jeans </strong></p>
+        <p><strong>Price:</strong> &#8377; 1499</p>
+      </div>
+      <div class="col" id="premium">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/l0e6kcw0/t-shirt/4/m/h/l-half-triangel-black-one-nb-nicky-boy-original-imagc747pchym7dg.jpeg?q=70"
+          alt=""  width="260px" height="100px">
+        <p><strong>T shrit</strong></p>
+        <p><strong>Price:</strong> &#8377; 299</p>
+      </div>
+      <div class="col" id="premium">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/blanket/c/h/e/rosemary-doharset-19-home-fresh-original-imagqy4ddyrquh3h.jpeg?q=70"
+          alt="" width="260px" height="100px">
+        <p><strong>Bed</strong></p>
+        <p><strong>Price:</strong> &#8377; 1099</p>
+      </div>
+      <div class="col" id="premium">
+        <img
+          src="https://rukminim2.flixcart.com/image/416/416/xif0q/washing-machine-new/e/j/e/-original-imagnjr27tzs83vh.jpeg?q=70"
+          alt=""  width="260px" height="100px">
+        <p><strong>Washing Machine</strong></p>
+        <p><strong>Price:</strong> &#8377; 23000</p>
+      </div>
+    </div>
+    <a class="btn btn-outline-dark" th:href="@{shop}" id="buttn " >Explore More</a>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <footer class="p">
+      © Copyright 2023 - All rights reserved. Developed by My Team.
+          </footer>
+    
+</body>
+
+
+
+
+</html>

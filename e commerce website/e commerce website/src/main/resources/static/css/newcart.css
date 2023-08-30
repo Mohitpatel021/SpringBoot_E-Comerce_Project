@@ -1,0 +1,62 @@
+/* Reset some default browser styling */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply general styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.remove-button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-summary {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 5px;
+    flex-basis: 30%;
+}
+
+.checkout-button {
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}

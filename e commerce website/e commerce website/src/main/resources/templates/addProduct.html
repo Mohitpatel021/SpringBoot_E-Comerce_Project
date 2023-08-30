@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add Product</title>
+  <link rel="stylesheet" type="text/css" href="css\project1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <style>
+    .p{
+      position: fixed;
+      color: aliceblue;
+      /* display: inline-block; */
+      padding: 10px 539px 10px 539px;
+      bottom: 5px;
+      background: #355C7D;  
+      background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  
+      background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  }
+  </style><!-- <script src="\js\addProductValidation.js"></script> -->
+</head>
+
+<body>
+  <h1>Add Product</h1>
+  <div class="container">
+    <div class="container-inner">
+      <form id="addProductForm" action="/shop" method="post">
+        <div class="container-item">
+          <label for="pname">Product Name</label><br>
+          <input type="text" id="pname" required name="product_name">
+        </div>
+        <div class="container-item">
+          <label for="brand">Brand Name</label><br>
+          <input type="text" id="brand" required pattern="[A-Za-z]+" title="Only letters are allowed" name="brand_name">
+        </div>
+        <div class="container-item">
+          <label for="model">Model Number</label><br>
+          <input type="text" id="model" required name="model_no">
+        </div>
+        <div class="container-item">
+          <label for="price">Price</label><br>
+          <input type="number" id="price" required name="price">
+        </div>
+        <div class="container-item">
+          <label for="colours">Available colours</label><br>
+          <input type="text" id="colours" required name="collor">
+        </div>
+        <div class="container-item">
+          <label for="imageUrl">Product Image URL</label><br>
+          <input type="text" id="imageUrl" name="image_url">
+
+        </div>
+        <div class="container-item">
+          <button type="submit">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="p">
+    © Copyright 2023 - All rights reserved. Developed by My Team.
+        </footer>
+  <!-- <script th:src="@{js/addProductValidation.js}"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script> -->
+  <!-- <script src="project1.js"></script> -->
+</body>
+
+</html>

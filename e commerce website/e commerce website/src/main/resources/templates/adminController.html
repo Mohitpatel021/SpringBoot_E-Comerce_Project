@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <title>Admin Controller</title>
+  <style>
+    .p{
+      position: fixed;
+      color: aliceblue;
+      /* display: inline-block; */
+      padding: 10px 539px 10px 539px;
+      bottom: 5px;
+      background: #355C7D;  
+      background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  
+      background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Admin Controller</h1>
+    
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>
+            <a th:href="@{shop}" class="btn btn-primary">View</a>
+            <a th:href="@{productController}" class="btn btn-warning">Update</a>
+            <a th:href="@{productController}" class="btn btn-danger">Delete</a>
+            <a th:href="@{addProduct}" class="btn  btn-success">Add</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer class="p">
+    © Copyright 2023 - All rights reserved. Developed by My Team.
+        </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-O65bDxtZH+CrjQ7vnOv3D7H3vWOAP7/YdE7B1BLoosXYdzET6FmYqHLFqgJWFXfS" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

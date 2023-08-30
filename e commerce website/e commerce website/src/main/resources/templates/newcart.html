@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\newcart.css">
+    <title>Shopping Cart</title>
+    <style>
+     footer{background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); 
+ 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="\images\logo.png" alt="hds favicaon" width="30px;" style="color: honeydew !important;" >Vishal Mega Mart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" th:href="@{index}" style="color: honeydew;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="shop.html" th:href="@{shop}" style="color: honeydew;">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: honeydew;">
+                About us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="my-info.html" th:href="@{my-info}" >Info</a></li>
+                <li><a class="dropdown-item" href="brand.html" th:href="@{brand}" >Brand Partners</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html" th:href="@{contact}" style="color: honeydew;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="myCart.html" th:href="@{myCart}" style="color: honeydew;">Cart</a>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-but">
+              <a class="btn btn-outline-dark" href="adminLogin.html" th:href="@{admin}" style="color: honeydew;" >Admin</a>
+            </li>
+            <li class="nav-but">
+              <a class="btn btn-outline-dark" href="signup.html" th:href="@{signup}"  style="margin-left: 4px; color: honeydew;">SignUp</a>
+            </li>
+            <li class="nav-but">
+              <a class="btn btn-outline-dark" href="login.html" th:href="@{login}" style="margin-left: 4px; color: honeydew;">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+    
+    <div class="cart">
+        <div class="cart-item">
+            <img src="product1.jpg" alt="Product 1">
+            <div class="item-details">
+                <h2>Product 1</h2>
+                <p>Price: $19.99</p>
+                <p>Quantity: 2</p>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <img src="product2.jpg" alt="Product 2">
+            <div class="item-details">
+                <h2>Product 2</h2>
+                <p>Price: $24.99</p>
+                <p>Quantity: 1</p>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+        
+        <!-- More cart items can be added here -->
+    </div>
+    
+    <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <p>Total Items: 3</p>
+        <p>Subtotal: $64.97</p>
+        <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+    <footer class="p">
+      © Copyright 2023 - All rights reserved. Developed by My Team.
+          </footer>
+</body>
+
+</html>

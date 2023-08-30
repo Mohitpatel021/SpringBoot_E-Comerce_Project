@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="\css\project.css" rel="stylesheet" type="text/css">
+  <title></title>
+  <style>
+    footer{background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); 
+ 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="\images\logo.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="\images\logo.png" alt="hds favicaon" width="30px;"
+          style="color: honeydew !important;">Vishal Mega Mart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" th:href="@{index}"
+              style="color: honeydew;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="shop.html" th:href="@{shop}"
+              style="color: honeydew;">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" style="color: honeydew;">
+              About us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="my-info.html" th:href="@{my-info}">Info</a></li>
+              <li><a class="dropdown-item" href="brand.html" th:href="@{brand}">Brand Partners</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html" th:href="@{contact}"
+              style="color: honeydew;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="myCart.html" th:href="@{myCart}"
+              style="color: honeydew;">Cart</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-outline-dark" href="adminLogin.html" th:href="@{admin}" style="color: honeydew;">Admin</a>
+          </li>
+          <li class="nav-but">
+            <a class="btn btn-outline-dark" href="signup.html" th:href="@{signup}"
+              style="margin-left: 4px; color: honeydew;">SignUp</a>
+          </li>
+          <li class="nav-but">
+            <a class="btn btn-outline-dark" href="login.html" th:href="@{login}"
+              style="margin-left: 4px; color: honeydew;">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="Form ">
+    <div class="container">
+      <div class="row login-page">
+        <div class="col-lg-5 pt-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" class="image-fluid py-2" id="login-image">
+        </div>
+        <div class="col-lg-7">
+          <h1 class="font-weight-bold py-2">Admin Login</h1>
+        </div>
+        <form class="formm px-5 " id="formpage" action="/admin_login" method="post">
+          <div class="form-row">
+            <div class="col-lg-7 ">
+              <label for="admin"><strong>Enter Admin Id</strong></label>
+              <input type="text" placeholder="admin_id" class="form-control required" name="admin" id="admin" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7 pt-3">
+              <label for="password"><strong>Enter password</strong></label>
+              <input type="password" placeholder="Enter your password" class="form-control required" name="password" id="password" required>
+            </div>
+          </div>
+          <div class="form-row" id="loginbut">
+            <div class="col-lg-7 ">
+              <button type="submit" id="btn1" class="btn btn-outline-dark">Admin Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="p">
+    © Copyright 2023 - All rights reserved. Developed by My Team.
+        </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <footer class="p">
+      © Copyright 2023 - All rights reserved. Developed by My Team.
+          </footer>
+
+</body>
+
+</html>

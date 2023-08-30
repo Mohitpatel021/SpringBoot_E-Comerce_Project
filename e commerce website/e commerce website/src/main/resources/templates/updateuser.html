@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Product</title>
+  <link rel="stylesheet" type="text/css" href="css\project1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Update Product</h1>
+  <div class="container">
+    <div class="container-inner">
+      <form id="addProductForm" action="/shop" method="post">
+        <input type="hidden" name="product_id" th:value="${product.product_id}">
+        <div class="container-item">
+          <!-- <input type="hidden" name="product_id" th:value="${product.product_name}"> -->
+          <label for="pname">Product Name</label><br>
+          <input type="text" id="pname" required name="product_name" th:value="${product.product_name}">
+        </div>
+        <div class="container-item">
+          <!-- <input type="hidden" name="product_id" th:value="${product.brand_name}"> -->
+          <label for="brand">Brand Name</label><br>
+          <input type="text" id="brand" required  name="brand_name" th:value="${product.brand_name}">
+        </div>
+        <div class="container-item">
+          <!-- <input type="hidden" name="product_id" th:value="${product.model_no}"> -->
+          <label for="model">Model Number</label><br>
+          <input type="text" id="model" required name="model_no" th:value="${product.model_no}">
+        </div>
+        <div class="container-item">
+          <!-- <input type="hidden" name="product_id" th:value="${product.price}"> -->
+          <label for="price">Price</label><br>
+          <input type="number" id="price" required name="price" th:value="${product.price}">
+        </div>
+        <div class="container-item">
+          <!-- <input type="hidden" name="product_id" th:value="${product.collor}"> -->
+          <label for="colours">Available colours</label><br>
+          <input type="text" id="colours" required name="collor" th:value="${product.collor}">
+        </div>
+        <div class="container-item">
+          <!-- <input type="hidden" name="product_id" th:value="${product.image_url}">  -->
+          <label for="imageUrl">Product Image URL</label><br>
+          <input type="text" id="imageUrl" name="image_url" th:value="${product.image_url}">
+          
+        </div>
+        <div class="container-item">
+          <button type="submit">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- <script src="project1.js"></script> -->
+</body>
+
+</html>
